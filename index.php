@@ -21,7 +21,7 @@ if ($arr_data['statusCode'] === 200) {
     $percent =number_format($arr_data["data"]['BTC']['change']['percent'], 2);
 
     $return_data = [
-        'c' => $c,
+        'c' => substr($c, -6),
         'percent' => substr($percent, 1),
         'c1' => substr($c, -1),
         'percent1' =>  substr($percent, -1),
